@@ -1,0 +1,6 @@
+framework module Pods_Podium {
+  umbrella header "Pods-Podium-umbrella.h"
+
+  export *
+  module * { export * }
+}

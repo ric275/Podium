@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14087.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14075.4"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,14 +45,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up to buy as a fan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3f-V9-r6T">
                                 <rect key="frame" x="33" y="41" width="308" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.85566986239999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K69-qv-Q6X">
                                 <rect key="frame" x="89" y="617" width="198" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.63840418779999997" green="0.0" blue="0.089882279529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Been here before? Sign in!">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="1" green="0.85566986239999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <segue destination="MtR-Dp-YzH" kind="show" id="nAa-M7-lRr"/>
@@ -67,18 +67,19 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtU-LY-pi4">
                                 <rect key="frame" x="140" y="264" width="97" height="30"/>
-                                <state key="normal" title="Choose Photo">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <state key="normal" title="Choose Photo"/>
+                                <connections>
+                                    <action selector="selectImage:" destination="miM-ej-QfK" eventType="touchUpInside" id="nyK-Qm-lFa"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edt-uo-8tz">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edt-uo-8tz">
                                 <rect key="frame" x="89" y="510" width="198" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.63840418779999997" green="0.0" blue="0.089882279529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Create account">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="1" green="0.85566986239999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="IDq-8c-DUA" kind="show" id="Rf0-i4-1rn"/>
+                                    <action selector="createAccount:" destination="miM-ej-QfK" eventType="touchUpInside" id="8ek-Sx-MHH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -116,15 +117,23 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UPX-cX-AIf"/>
                     </view>
+                    <connections>
+                        <outlet property="createButton" destination="edt-uo-8tz" id="QiW-sC-50K"/>
+                        <outlet property="emailText" destination="Wgn-AX-x6v" id="TIK-ng-1L9"/>
+                        <outlet property="nameText" destination="Boe-dn-zaL" id="rZU-L5-6eO"/>
+                        <outlet property="passwordConfirm" destination="Shq-LG-zod" id="BIv-RI-S4j"/>
+                        <outlet property="passwordText" destination="DHa-AX-ood" id="V6G-XW-6kL"/>
+                        <outlet property="picture" destination="wUn-gC-YBm" id="UFV-6C-OWe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftl-iK-Acz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1295.2" y="142.57871064467767"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="Fjr-QX-vak">
             <objects>
-                <viewController id="MtR-Dp-YzH" sceneMemberID="viewController">
+                <viewController id="MtR-Dp-YzH" customClass="LoginViewController" customModule="Podium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZXK-hn-1WQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,26 +152,26 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xH-QM-WeE">
                                 <rect key="frame" x="118" y="275" width="138" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.63840418779999997" green="0.0" blue="0.089882279529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Log In">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="1" green="0.85566986239999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="IDq-8c-DUA" kind="show" id="zvb-of-juP"/>
+                                    <action selector="loginPressed:" destination="MtR-Dp-YzH" eventType="touchUpInside" id="h5W-FH-09O"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PODIUM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jzc-r7-ShA">
                                 <rect key="frame" x="126" y="49" width="122" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.85566986239999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Jk-03-33X">
                                 <rect key="frame" x="118" y="617" width="138" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="New? SIgn up!">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.63840418779999997" green="0.0" blue="0.089882279529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="New? Sign up!">
+                                    <color key="titleColor" red="1" green="0.85566986239999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
                         </subviews>
@@ -183,36 +192,38 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="i6x-pV-d98"/>
                     </view>
+                    <connections>
+                        <outlet property="emailText" destination="oMt-GW-bkT" id="oeJ-Br-c7a"/>
+                        <outlet property="passwordText" destination="rUo-ja-Hez" id="jiR-6N-8Vr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffg-96-IrS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1626" y="-615"/>
         </scene>
-        <!--View Controller-->
+        <!--Launding View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Podium" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LaundingViewController" customModule="Podium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWB-ua-zuj">
-                                <rect key="frame" x="82" y="217" width="211" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWB-ua-zuj">
+                                <rect key="frame" x="109" y="260.5" width="157" height="30"/>
+                                <color key="backgroundColor" red="0.63840418781725883" green="0.0" blue="0.089882279529419559" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Sign up to buy as a fan">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="1" green="0.85566986239999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="miM-ej-QfK" kind="show" id="89O-xG-oBK"/>
+                                    <segue destination="miM-ej-QfK" kind="show" id="Cbi-eT-jug"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPo-m9-rVg">
-                                <rect key="frame" x="82" y="301" width="211" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPo-m9-rVg">
+                                <rect key="frame" x="99" y="318.5" width="177" height="30"/>
+                                <color key="backgroundColor" red="0.63840418779999997" green="0.0" blue="0.089882279529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Sign up to sell as an artist">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="1" green="0.85566986239999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <segue destination="64q-o0-XvC" kind="show" id="GHt-5X-zY5"/>
@@ -221,32 +232,47 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PODIUM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUC-GT-Bjc">
                                 <rect key="frame" x="126" y="88" width="122" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.85566986243183174" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaI-bl-ohi">
                                 <rect key="frame" x="82" y="617" width="211" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.63840418779999997" green="0.0" blue="0.089882279529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Been here before? Sign in!">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="1" green="0.85566986239999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <segue destination="MtR-Dp-YzH" kind="show" id="Szu-Nr-XuN"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGa-Q2-HDg">
+                                <rect key="frame" x="152" y="134" width="71" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZUC-GT-Bjc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1QC-Ku-XcT"/>
+                            <constraint firstItem="jWB-ua-zuj" firstAttribute="top" secondItem="lGa-Q2-HDg" secondAttribute="bottom" constant="100" id="CLl-vm-eVR"/>
+                            <constraint firstItem="vPo-m9-rVg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FsS-Uh-RwV"/>
+                            <constraint firstItem="lGa-Q2-HDg" firstAttribute="top" secondItem="ZUC-GT-Bjc" secondAttribute="bottom" constant="7.5" id="SYw-Ni-3rM"/>
+                            <constraint firstItem="jWB-ua-zuj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="chh-lb-kck"/>
+                            <constraint firstItem="vPo-m9-rVg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lpa-0D-0Ox"/>
+                            <constraint firstItem="lGa-Q2-HDg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xcn-jG-cZX"/>
                             <constraint firstItem="ZUC-GT-Bjc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="zv3-2a-qKU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="versionLabel" destination="lGa-Q2-HDg" id="Eg5-5R-TXF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2012" y="144"/>
+            <point key="canvasLocation" x="-2012" y="143.47826086956522"/>
         </scene>
         <!--Charts-->
         <scene sceneID="xh2-j2-GwR">
@@ -374,7 +400,7 @@
         <!--Profile-->
         <scene sceneID="O7W-ZR-ywc">
             <objects>
-                <viewController title="Profile" id="gv3-K6-Afa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Profile" title="Profile" id="gv3-K6-Afa" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3iH-WH-S3w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -533,7 +559,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="3BY-LF-wyk">
             <objects>
-                <tabBarController id="IDq-8c-DUA" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="root" id="IDq-8c-DUA" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="C8C-bN-iAS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -554,7 +580,7 @@
         <!--Store-->
         <scene sceneID="gjX-CM-BAD">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hJP-oH-aKh" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Store" automaticallyAdjustsScrollViewInsets="NO" id="hJP-oH-aKh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Store" id="b0p-p5-jSg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="drI-Bn-JUx">
@@ -996,7 +1022,6 @@
         <image name="true colours" width="1500" height="1500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Rf0-i4-1rn"/>
-        <segue reference="nAa-M7-lRr"/>
+        <segue reference="Szu-Nr-XuN"/>
     </inferredMetricsTieBreakers>
 </document>

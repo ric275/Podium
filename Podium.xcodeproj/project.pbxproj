@@ -18,6 +18,8 @@
 		0433DAE62017680F00FA79BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0433DAE42017680F00FA79BD /* GoogleService-Info.plist */; };
 		0433DAE72017680F00FA79BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0433DAE42017680F00FA79BD /* GoogleService-Info.plist */; };
 		0433DAE92017EC5300FA79BD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433DAE82017EC5300FA79BD /* SignUpViewController.swift */; };
+		0488A1A6201BF25F00ABBC70 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488A1A5201BF25F00ABBC70 /* LoginViewController.swift */; };
+		0488A1A8201BF84D00ABBC70 /* LaundingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488A1A7201BF84D00ABBC70 /* LaundingViewController.swift */; };
 		2D539F65E04BC827EEA1E259 /* Pods_PodiumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4335D35A35031B0988FB490 /* Pods_PodiumTests.framework */; };
 		5246912A62AA4840A963C7EA /* Pods_Podium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3F83511618E428F0B453AF /* Pods_Podium.framework */; };
 		725898299B6C0ADA1B075052 /* Pods_PodiumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC3D3CE181D732608D1CDF2 /* Pods_PodiumUITests.framework */; };
@@ -56,6 +58,8 @@
 		0433DAD7201229B400FA79BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0433DAE42017680F00FA79BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0433DAE82017EC5300FA79BD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0488A1A5201BF25F00ABBC70 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0488A1A7201BF84D00ABBC70 /* LaundingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundingViewController.swift; sourceTree = "<group>"; };
 		0BE33B3F0760E8626852F435 /* Pods-PodiumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodiumTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodiumTests/Pods-PodiumTests.release.xcconfig"; sourceTree = "<group>"; };
 		5F203E4CD5CD8F49ABFB19B7 /* Pods-PodiumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodiumTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodiumTests/Pods-PodiumTests.debug.xcconfig"; sourceTree = "<group>"; };
 		733D687201520D7F93B337DB /* Pods-Podium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Podium.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Podium/Pods-Podium.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,7 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				0433DAB2201229B400FA79BD /* AppDelegate.swift */,
+				0488A1A7201BF84D00ABBC70 /* LaundingViewController.swift */,
 				0433DAE82017EC5300FA79BD /* SignUpViewController.swift */,
+				0488A1A5201BF25F00ABBC70 /* LoginViewController.swift */,
 				0433DAB6201229B400FA79BD /* Main.storyboard */,
 				0433DABC201229B400FA79BD /* Assets.xcassets */,
 				0433DABE201229B400FA79BD /* LaunchScreen.storyboard */,
@@ -489,9 +495,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0488A1A6201BF25F00ABBC70 /* LoginViewController.swift in Sources */,
 				0433DAE92017EC5300FA79BD /* SignUpViewController.swift in Sources */,
 				0433DABB201229B400FA79BD /* Podium.xcdatamodeld in Sources */,
 				0433DAB3201229B400FA79BD /* AppDelegate.swift in Sources */,
+				0488A1A8201BF84D00ABBC70 /* LaundingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

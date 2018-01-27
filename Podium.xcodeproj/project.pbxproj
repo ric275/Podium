@@ -20,6 +20,10 @@
 		0433DAE92017EC5300FA79BD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433DAE82017EC5300FA79BD /* SignUpViewController.swift */; };
 		0488A1A6201BF25F00ABBC70 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488A1A5201BF25F00ABBC70 /* LoginViewController.swift */; };
 		0488A1A8201BF84D00ABBC70 /* LaundingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488A1A7201BF84D00ABBC70 /* LaundingViewController.swift */; };
+		0488A1AA201CA5EF00ABBC70 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488A1A9201CA5EF00ABBC70 /* StoreViewController.swift */; };
+		0488A1AC201D232900ABBC70 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488A1AB201D232900ABBC70 /* SocialViewController.swift */; };
+		0488A1B0201D25D000ABBC70 /* ArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488A1AF201D25D000ABBC70 /* ArtistCell.swift */; };
+		0488A1B5201D28AE00ABBC70 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488A1B4201D28AE00ABBC70 /* Artist.swift */; };
 		2D539F65E04BC827EEA1E259 /* Pods_PodiumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4335D35A35031B0988FB490 /* Pods_PodiumTests.framework */; };
 		5246912A62AA4840A963C7EA /* Pods_Podium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3F83511618E428F0B453AF /* Pods_Podium.framework */; };
 		725898299B6C0ADA1B075052 /* Pods_PodiumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC3D3CE181D732608D1CDF2 /* Pods_PodiumUITests.framework */; };
@@ -60,6 +64,10 @@
 		0433DAE82017EC5300FA79BD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0488A1A5201BF25F00ABBC70 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0488A1A7201BF84D00ABBC70 /* LaundingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundingViewController.swift; sourceTree = "<group>"; };
+		0488A1A9201CA5EF00ABBC70 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		0488A1AB201D232900ABBC70 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
+		0488A1AF201D25D000ABBC70 /* ArtistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCell.swift; sourceTree = "<group>"; };
+		0488A1B4201D28AE00ABBC70 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		0BE33B3F0760E8626852F435 /* Pods-PodiumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodiumTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodiumTests/Pods-PodiumTests.release.xcconfig"; sourceTree = "<group>"; };
 		5F203E4CD5CD8F49ABFB19B7 /* Pods-PodiumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodiumTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodiumTests/Pods-PodiumTests.debug.xcconfig"; sourceTree = "<group>"; };
 		733D687201520D7F93B337DB /* Pods-Podium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Podium.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Podium/Pods-Podium.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,9 +133,14 @@
 			isa = PBXGroup;
 			children = (
 				0433DAB2201229B400FA79BD /* AppDelegate.swift */,
+				0488A1B1201D285D00ABBC70 /* ViewControllers */,
 				0488A1A7201BF84D00ABBC70 /* LaundingViewController.swift */,
 				0433DAE82017EC5300FA79BD /* SignUpViewController.swift */,
 				0488A1A5201BF25F00ABBC70 /* LoginViewController.swift */,
+				0488A1A9201CA5EF00ABBC70 /* StoreViewController.swift */,
+				0488A1AB201D232900ABBC70 /* SocialViewController.swift */,
+				0488A1B2201D288100ABBC70 /* Custom Cells */,
+				0488A1B3201D289100ABBC70 /* Objects */,
 				0433DAB6201229B400FA79BD /* Main.storyboard */,
 				0433DABC201229B400FA79BD /* Assets.xcassets */,
 				0433DABE201229B400FA79BD /* LaunchScreen.storyboard */,
@@ -154,6 +167,29 @@
 				0433DAD7201229B400FA79BD /* Info.plist */,
 			);
 			path = PodiumUITests;
+			sourceTree = "<group>";
+		};
+		0488A1B1201D285D00ABBC70 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0488A1B2201D288100ABBC70 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0488A1AF201D25D000ABBC70 /* ArtistCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		0488A1B3201D289100ABBC70 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				0488A1B4201D28AE00ABBC70 /* Artist.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 		65FD4125AF6154E5E7C13D9E /* Frameworks */ = {
@@ -497,6 +533,10 @@
 			files = (
 				0488A1A6201BF25F00ABBC70 /* LoginViewController.swift in Sources */,
 				0433DAE92017EC5300FA79BD /* SignUpViewController.swift in Sources */,
+				0488A1B0201D25D000ABBC70 /* ArtistCell.swift in Sources */,
+				0488A1B5201D28AE00ABBC70 /* Artist.swift in Sources */,
+				0488A1AC201D232900ABBC70 /* SocialViewController.swift in Sources */,
+				0488A1AA201CA5EF00ABBC70 /* StoreViewController.swift in Sources */,
 				0433DABB201229B400FA79BD /* Podium.xcdatamodeld in Sources */,
 				0433DAB3201229B400FA79BD /* AppDelegate.swift in Sources */,
 				0488A1A8201BF84D00ABBC70 /* LaundingViewController.swift in Sources */,

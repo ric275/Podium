@@ -18,6 +18,10 @@ class StoreViewController: UIViewController {
     
     @IBAction func logOut(_ sender: Any) {
         
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "home")
+        
+        self.present(vc, animated: true, completion: nil)
+        
         
     }
     

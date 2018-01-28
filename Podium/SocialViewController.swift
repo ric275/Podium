@@ -5,7 +5,8 @@
 //  Created by Jack Taylor on 27/01/2018.
 //  Copyright © 2018 Jack Taylor. All rights reserved.
 //
-//  ALL COVERED IN EP 2
+//  ALL COVERED IN EP 2 - FOLLOWERS AND ALL.
+//  https://www.youtube.com/watch?v=js3gHOuPb28
 
 import UIKit
 import Firebase
@@ -72,7 +73,66 @@ class SocialViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.userID = self.artists[indexPath.row].userID
         cell.artistImage.downloadImage(from: self.artists[indexPath.row].imagePath!)
         
+        checkFollowing(indexPath: indexPath)
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let uid = Auth.auth().currentUser!.uid
+        let ref = Database.database().reference()
+        let key = ref.child("users").childByAutoId().key
+        
+        var isFollower : Bool = false
+        
+        ref.child("users").child(uid).child("following").queryOrderedByKey().observeSingleEvent(of: .value) { (snapshot) in
+            
+            if let following = snapshot.value as? [String : AnyObject] {
+                for (ke, value) in following {
+                    if value as! String == self.artists[indexPath.row].userID {
+                        isFollower = true
+                        
+                        ref.child("users").child(uid).child("following/\(ke)").removeValue()
+                        ref.child("users").child(self.artists[indexPath.row].userID).child("followers/\(ke)").removeValue()
+                        
+                        self.tableView.cellForRow(at: indexPath)?.accessoryType = .none
+                        
+                    }
+                }
+            }
+            
+            if isFollower == false {
+                let following = ["following/\(key)" : self.artists[indexPath.row].userID]
+                let followers = ["followers/\(key)" : uid]
+                
+                ref.child("users").child(uid).updateChildValues(following)
+                ref.child("users").child(self.artists[indexPath.row].userID).updateChildValues(followers)
+                
+                self.tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+            }
+        }
+        
+        ref.removeAllObservers()
+    }
+    
+    func checkFollowing(indexPath : IndexPath) {
+        
+        let uid = Auth.auth().currentUser!.uid
+        let ref = Database.database().reference()
+        
+        ref.child("users").child(uid).child("following").queryOrderedByKey().observeSingleEvent(of: .value) { (snapshot) in
+            
+            if let following = snapshot.value as? [String : AnyObject] {
+                for (ke, value) in following {
+                    if value as! String == self.artists[indexPath.row].userID {
+                    self.tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+                    }
+                    
+                }
+            }
+        }
+        ref.removeAllObservers()
+        
     }
     
 }

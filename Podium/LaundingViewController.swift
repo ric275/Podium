@@ -22,4 +22,17 @@ class LaundingViewController: UIViewController {
         }
         
     }
+    
+    func artistErrorAlert() {
+        let artistErrorAlert = UIAlertController(title: "Not yet.", message: "Artist accounts are not usable yet!", preferredStyle: .alert)
+        let cont = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        artistErrorAlert.addAction(cont)
+        self.present(artistErrorAlert, animated: true, completion: nil)
+    }
+    
+    @IBAction func artistTapped(_ sender: Any) {
+    
+    artistErrorAlert()
+    
+    }
 }

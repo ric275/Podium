@@ -324,7 +324,7 @@
         <!--Social-->
         <scene sceneID="21J-Vr-wmV">
             <objects>
-                <viewController storyboardIdentifier="Social" title="Social" id="HzI-Je-IUy" customClass="SocialViewController" customModule="Podium" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="social" title="Social" id="HzI-Je-IUy" customClass="SocialViewController" customModule="Podium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="doO-2Y-24F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -387,8 +387,15 @@
                         <viewLayoutGuide key="safeArea" id="C52-Bv-585"/>
                     </view>
                     <navigationItem key="navigationItem" title="Social" largeTitleDisplayMode="always" id="1WK-e3-06L">
-                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="osG-tn-fia"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="0d4-DL-HIF"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="osG-tn-fia">
+                            <color key="tintColor" red="1" green="0.85566986239999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="0d4-DL-HIF">
+                            <color key="tintColor" red="1" green="0.85566986239999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="composeTapped:" destination="HzI-Je-IUy" id="a7o-DS-DlL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="searchDisplayController" destination="5oG-TN-C1g" id="q1j-O1-vdw"/>
@@ -405,7 +412,97 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="2912.8000000000002" y="1245.4272863568217"/>
+            <point key="canvasLocation" x="2914" y="1299"/>
+        </scene>
+        <!--Compose New Post-->
+        <scene sceneID="dym-v0-hhG">
+            <objects>
+                <viewController id="je7-Rz-igG" customClass="ComposePostViewController" customModule="Podium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C2y-W9-9IE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nfe-Uv-G55">
+                                <rect key="frame" x="37" y="83" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="P6P-S4-zOk"/>
+                                    <constraint firstAttribute="height" constant="300" id="Tpk-zI-dXw"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BZY-gw-q3C">
+                                <rect key="frame" x="37" y="391" width="300" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <string key="text">This is where an artist can type a post to send out to his or her fan's feeds. They can also add an image to this post and are encouraged to do so.</string>
+                                <color key="textColor" red="0.63840418779999997" green="0.0" blue="0.089882279529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dx0-xf-Jq7">
+                                <rect key="frame" x="155" y="617" width="65" height="30"/>
+                                <color key="backgroundColor" red="0.63840418779999997" green="0.0" blue="0.089882279529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JIb-DV-Frw"/>
+                                    <constraint firstAttribute="width" constant="65" id="zcu-da-7dL"/>
+                                </constraints>
+                                <state key="normal" title="Post">
+                                    <color key="titleColor" red="1" green="0.85566986239999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="postTapped:" destination="je7-Rz-igG" eventType="touchUpInside" id="ZmO-8s-T6Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gl-o1-i2H">
+                                <rect key="frame" x="140" y="218" width="94" height="30"/>
+                                <state key="normal" title="Add an image"/>
+                                <connections>
+                                    <action selector="addImageTapped:" destination="je7-Rz-igG" eventType="touchUpInside" id="LQm-9N-AUv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8gl-o1-i2H" firstAttribute="centerX" secondItem="C2y-W9-9IE" secondAttribute="centerX" id="0y9-bM-idi"/>
+                            <constraint firstItem="y4V-Oc-3r3" firstAttribute="bottom" secondItem="dx0-xf-Jq7" secondAttribute="bottom" constant="20" id="BVX-2h-fgj"/>
+                            <constraint firstItem="nfe-Uv-G55" firstAttribute="centerX" secondItem="C2y-W9-9IE" secondAttribute="centerX" id="Hhl-11-grJ"/>
+                            <constraint firstItem="8gl-o1-i2H" firstAttribute="top" secondItem="y4V-Oc-3r3" secondAttribute="top" constant="154" id="ZyU-mh-rbQ"/>
+                            <constraint firstItem="dx0-xf-Jq7" firstAttribute="centerX" secondItem="C2y-W9-9IE" secondAttribute="centerX" id="pAc-WS-aXI"/>
+                            <constraint firstItem="y4V-Oc-3r3" firstAttribute="bottom" secondItem="nfe-Uv-G55" secondAttribute="bottom" constant="284" id="zWf-dl-32j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="y4V-Oc-3r3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Compose New Post" id="HZw-09-TEQ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="WZl-UM-dCy">
+                            <color key="tintColor" red="1" green="0.85566986239999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="cancelTapped:" destination="je7-Rz-igG" id="Hn7-5W-wjk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="chooseImageButton" destination="8gl-o1-i2H" id="UAh-RJ-YJW"/>
+                        <outlet property="picture" destination="nfe-Uv-G55" id="lMG-pq-4PE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o7x-Zj-nW9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4297" y="1299"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XJU-h7-7T7">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2j-CS-J5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="compose" id="HcT-DD-ZLm" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="S33-BA-HG3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="je7-Rz-igG" kind="relationship" relationship="rootViewController" id="0WU-9k-90x"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="3609" y="1299"/>
         </scene>
         <!--Library-->
         <scene sceneID="Nyk-rM-PNk">
@@ -712,7 +809,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNN-eh-31b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2913" y="2737"/>
+            <point key="canvasLocation" x="2914" y="2790"/>
         </scene>
         <!--Stats-->
         <scene sceneID="ulL-Dz-aTU">
@@ -809,7 +906,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tj5-sz-6QY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2912.8000000000002" y="2075.7121439280363"/>
+            <point key="canvasLocation" x="2914" y="2129"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7FW-Xl-EB1">
@@ -829,12 +926,13 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cPj-Lj-cPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="810" y="2382"/>
+            <point key="canvasLocation" x="810" y="2435"/>
         </scene>
         <!--Social-->
         <scene sceneID="lTk-TX-Qxr">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wuN-Ga-bQx" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="itw-O5-OAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="socialRoot" automaticallyAdjustsScrollViewInsets="NO" id="wuN-Ga-bQx" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Social" id="XyY-8u-W2G"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LLb-3M-6zJ">
@@ -846,9 +944,8 @@
                         <segue destination="HzI-Je-IUy" kind="relationship" relationship="rootViewController" id="aGN-WM-HLi"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="itw-O5-OAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2105" y="1248"/>
+            <point key="canvasLocation" x="2106" y="1300"/>
         </scene>
         <!--Profile-->
         <scene sceneID="gBE-Jd-oh6">
@@ -886,7 +983,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b4Q-U8-4yx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2105" y="2076"/>
+            <point key="canvasLocation" x="2106" y="2129"/>
         </scene>
         <!--Music Manager-->
         <scene sceneID="eD6-w8-6ug">
@@ -905,7 +1002,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pyl-KY-Qhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2105" y="2737"/>
+            <point key="canvasLocation" x="2106" y="2790"/>
         </scene>
         <!--Social-->
         <scene sceneID="PTN-Fs-lHD">
@@ -924,7 +1021,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFF-DV-9LV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2105" y="3485"/>
+            <point key="canvasLocation" x="2106" y="3537"/>
         </scene>
         <!--Profile-->
         <scene sceneID="Mav-LN-wxu">
@@ -943,7 +1040,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akE-vd-hmx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3892" y="2382"/>
+            <point key="canvasLocation" x="3894" y="2435"/>
         </scene>
         <!--Profile-->
         <scene sceneID="Nbr-Ui-qQn">
@@ -1006,7 +1103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rdq-3i-nxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4734" y="2382"/>
+            <point key="canvasLocation" x="4735" y="2435"/>
         </scene>
         <!--Social-->
         <scene sceneID="mSr-2g-fRi">
@@ -1058,7 +1155,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="2912.8000000000002" y="3483.5082458770617"/>
+            <point key="canvasLocation" x="2914" y="3537"/>
         </scene>
     </scenes>
     <resources>

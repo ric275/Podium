@@ -18,6 +18,7 @@
 		0433DAE62017680F00FA79BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0433DAE42017680F00FA79BD /* GoogleService-Info.plist */; };
 		0433DAE72017680F00FA79BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0433DAE42017680F00FA79BD /* GoogleService-Info.plist */; };
 		0433DAE92017EC5300FA79BD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433DAE82017EC5300FA79BD /* SignUpViewController.swift */; };
+		0445A1DD201FBD8700F929EF /* ComposePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445A1DC201FBD8700F929EF /* ComposePostViewController.swift */; };
 		0488A1A6201BF25F00ABBC70 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488A1A5201BF25F00ABBC70 /* LoginViewController.swift */; };
 		0488A1A8201BF84D00ABBC70 /* LaundingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488A1A7201BF84D00ABBC70 /* LaundingViewController.swift */; };
 		0488A1AA201CA5EF00ABBC70 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488A1A9201CA5EF00ABBC70 /* StoreViewController.swift */; };
@@ -62,6 +63,7 @@
 		0433DAD7201229B400FA79BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0433DAE42017680F00FA79BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0433DAE82017EC5300FA79BD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0445A1DC201FBD8700F929EF /* ComposePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposePostViewController.swift; sourceTree = "<group>"; };
 		0488A1A5201BF25F00ABBC70 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0488A1A7201BF84D00ABBC70 /* LaundingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundingViewController.swift; sourceTree = "<group>"; };
 		0488A1A9201CA5EF00ABBC70 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
@@ -134,11 +136,6 @@
 			children = (
 				0433DAB2201229B400FA79BD /* AppDelegate.swift */,
 				0488A1B1201D285D00ABBC70 /* ViewControllers */,
-				0488A1A7201BF84D00ABBC70 /* LaundingViewController.swift */,
-				0433DAE82017EC5300FA79BD /* SignUpViewController.swift */,
-				0488A1A5201BF25F00ABBC70 /* LoginViewController.swift */,
-				0488A1A9201CA5EF00ABBC70 /* StoreViewController.swift */,
-				0488A1AB201D232900ABBC70 /* SocialViewController.swift */,
 				0488A1B2201D288100ABBC70 /* Custom Cells */,
 				0488A1B3201D289100ABBC70 /* Objects */,
 				0433DAB6201229B400FA79BD /* Main.storyboard */,
@@ -172,6 +169,12 @@
 		0488A1B1201D285D00ABBC70 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0445A1DC201FBD8700F929EF /* ComposePostViewController.swift */,
+				0488A1A7201BF84D00ABBC70 /* LaundingViewController.swift */,
+				0433DAE82017EC5300FA79BD /* SignUpViewController.swift */,
+				0488A1A5201BF25F00ABBC70 /* LoginViewController.swift */,
+				0488A1A9201CA5EF00ABBC70 /* StoreViewController.swift */,
+				0488A1AB201D232900ABBC70 /* SocialViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -534,6 +537,7 @@
 				0488A1A6201BF25F00ABBC70 /* LoginViewController.swift in Sources */,
 				0433DAE92017EC5300FA79BD /* SignUpViewController.swift in Sources */,
 				0488A1B0201D25D000ABBC70 /* ArtistCell.swift in Sources */,
+				0445A1DD201FBD8700F929EF /* ComposePostViewController.swift in Sources */,
 				0488A1B5201D28AE00ABBC70 /* Artist.swift in Sources */,
 				0488A1AC201D232900ABBC70 /* SocialViewController.swift in Sources */,
 				0488A1AA201CA5EF00ABBC70 /* StoreViewController.swift in Sources */,

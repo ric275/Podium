@@ -135,6 +135,18 @@ class SocialViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
     }
     
+    
+    @IBAction func composeTapped(_ sender: Any) {
+        
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "compose")
+        
+        self.present(vc, animated: true, completion: nil)
+    
+    
+    
+    }
+    
+    
 }
 
 extension UIImageView {

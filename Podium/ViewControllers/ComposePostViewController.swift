@@ -59,43 +59,50 @@ class ComposePostViewController: UIViewController, UIImagePickerControllerDelega
             
         } else {
             
+            AppDelegate.instance().showActivityIndicator()
+        
+            print("POST")
+            
             let ref = Database.database().reference()
             let uid = Auth.auth().currentUser!.uid
             let storage = Storage.storage().reference(forURL: "gs://podiumbic.appspot.com/")
-            
             let key = ref.child("artistPosts").childByAutoId().key
-            
             let imgRef = storage.child("artistPosts").child(uid).child("\(key).jpg")
-            
             let data = UIImageJPEGRepresentation(self.picture.image!, 0.6)
             
             let uploadTask = imgRef.putData(data!, metadata: nil, completion: { (metadata, error) in
                 if error != nil {
                     print("ERROR: \(error!.localizedDescription)")
+                    AppDelegate.instance().dissmissActivityIndicator()
                     return
                 }
-            })
-                
+            
                 imgRef.downloadURL(completion: { (url, error) in
                     if let url = url {
-                        let feed = 
+                        let feed = ["userID" : uid,
+                                    "pathToImage" : url.absoluteString,
+                                    "likes" : 0,
+                                    "author" : Auth.auth().currentUser!.displayName,
+                                    "postID" : key] as [String : Any]
+                        
+                        let postFeed = ["\(key)" : feed]
+                        
+                        ref.child("artistPosts").updateChildValues(postFeed)
+                        
+                        AppDelegate.instance().dissmissActivityIndicator()
+
+                        
+                        self.dismiss(animated: true, completion: nil)
                     }
-                    
-                    
-                    
                 })
-                
-                
-                
-            }
+            })
+            uploadTask.resume()
         }
-        
+    }
         
         
         @IBAction func cancelTapped(_ sender: Any) {
             
-            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "root")
-            
-            self.present(vc, animated: true, completion: nil)
+            self.dismiss(animated: true, completion: nil)
         }
 }

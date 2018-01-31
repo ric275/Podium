@@ -14,7 +14,7 @@ import UIKit
 import Firebase
 
 class FeedViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     var posts = [SocialPost]()
@@ -26,7 +26,7 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         collectionView.dataSource = self
         
         getPosts()
-
+        
     }
     
     func getPosts() {
@@ -49,14 +49,39 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
                         self.following.append(Auth.auth().currentUser!.uid)
                         
                         ref.child("artistPosts").queryOrderedByKey().observeSingleEvent(of: .value, with: { (snap) in
-                            let posts = snap.value as! [String : AnyObject]
+                            let postsSnap = snap.value as! [String : AnyObject]
+                            
+                            for (_, post) in postsSnap {
+                                if let userID = post["userID"] as? String {
+                                    for each in self.following {
+                                        if each == userID {
+                                            let createdPost = SocialPost()
+                                            if let author = post["author"] as? String, let likes = post["likes"] as? Int, let pathToImage = post["pathToImage"] as? String, let postID = post["postID"] as? String {
+                                                
+                                                createdPost.author = author
+                                                createdPost.likes = likes
+                                                createdPost.pathToImage = pathToImage
+                                                createdPost.postID = postID
+                                                createdPost.userID = userID
+                                                
+                                                self.posts.append(createdPost)
+                                                
+                                            }
+                                        }
+                                    }
+                                    
+                                    self.collectionView.reloadData()
+                                }
+                            }
                             
                             
                         })
                     }
                 }
+            }
         }
-        }
+        
+        ref.removeAllObservers()
         
     }
     
@@ -71,12 +96,15 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeedCell", for: indexPath) as! FeedCell
         
-        //Build the cell
+        cell.image.downloadImage(from: self.posts[indexPath.row].pathToImage)
+        cell.authorLabel.text = "By: \(self.posts[indexPath.row].author!)"
+        cell.likesLabel.text = "Likes: \(self.posts[indexPath.row].likes!)"
+        cell.unlikeButton.isHidden = true
         
         return cell
     }
     
-
+    
     @IBAction func searchTapped(_ sender: Any) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "artists")
         

@@ -12,7 +12,7 @@ class SocialPost: NSObject {
     
     var author : String!
     var likes : Int!
-    var imagePath : String!
+    var pathToImage : String!
     var userID : String!
     var postID : String!
 

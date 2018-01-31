@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var picture: UIImageView!
     @IBOutlet weak var nameText: UITextField!
@@ -32,6 +32,11 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         userStorage = storage.child("users")
         ref = Database.database().reference()
         
+        nameText.delegate = self
+        emailText.delegate = self
+        passwordText.delegate = self
+        passwordConfirm.delegate = self
+        
     }
     
     @IBAction func selectImage(_ sender: Any) {
@@ -49,6 +54,17 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         }
 
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    //Hide keyboard when user taps done.
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        nameText.resignFirstResponder()
+        emailText.resignFirstResponder()
+        passwordText.resignFirstResponder()
+        passwordConfirm.resignFirstResponder()
+
+        return (true)
     }
     
     func noImageAlert() {

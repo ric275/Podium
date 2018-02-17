@@ -15,5 +15,7 @@ class SocialPost: NSObject {
     var pathToImage : String!
     var userID : String!
     var postID : String!
+    
+    var likers : [String] = [String]()
 
 }

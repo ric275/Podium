@@ -100,6 +100,7 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         cell.authorLabel.text = "By: \(self.posts[indexPath.row].author!)"
         cell.likesLabel.text = "Likes: \(self.posts[indexPath.row].likes!)"
         cell.unlikeButton.isHidden = true
+        cell.postID = self.posts[indexPath.row].postID
         
         return cell
     }

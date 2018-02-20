@@ -64,6 +64,12 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
                                                 createdPost.postID = postID
                                                 createdPost.userID = userID
                                                 
+                                                if let people = post["likers"] as? [String : AnyObject] {
+                                                    for (_,person) in people {
+                                                        createdPost.likers.append(person as! String)
+                                                    }
+                                                }
+                                                
                                                 self.posts.append(createdPost)
                                                 
                                             }
@@ -101,6 +107,14 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         cell.likesLabel.text = "Likes: \(self.posts[indexPath.row].likes!)"
         cell.unlikeButton.isHidden = true
         cell.postID = self.posts[indexPath.row].postID
+        
+        for person in self.posts[indexPath.row].likers {
+            if person == Auth.auth().currentUser!.uid {
+                cell.likeButton.isHidden = true
+                cell.unlikeButton.isHidden = false
+                break
+            }
+        }
         
         return cell
     }

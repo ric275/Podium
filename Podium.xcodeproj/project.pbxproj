@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043100A4203E3132000BB7CA /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043100A3203E3132000BB7CA /* LibraryViewController.swift */; };
+		043100B4203E38F6000BB7CA /* If I Lose Myself.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 043100B1203E38F5000BB7CA /* If I Lose Myself.m4a */; };
+		043100B5203E38F6000BB7CA /* Love Runs Out.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 043100B2203E38F5000BB7CA /* Love Runs Out.m4a */; };
+		043100B6203E38F6000BB7CA /* Counting Stars.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 043100B3203E38F6000BB7CA /* Counting Stars.m4a */; };
 		0433DAB3201229B400FA79BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433DAB2201229B400FA79BD /* AppDelegate.swift */; };
 		0433DAB8201229B400FA79BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0433DAB6201229B400FA79BD /* Main.storyboard */; };
 		0433DABB201229B400FA79BD /* Podium.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0433DAB9201229B400FA79BD /* Podium.xcdatamodeld */; };
@@ -51,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043100A3203E3132000BB7CA /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		043100B1203E38F5000BB7CA /* If I Lose Myself.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "If I Lose Myself.m4a"; sourceTree = "<group>"; };
+		043100B2203E38F5000BB7CA /* Love Runs Out.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Love Runs Out.m4a"; sourceTree = "<group>"; };
+		043100B3203E38F6000BB7CA /* Counting Stars.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Counting Stars.m4a"; sourceTree = "<group>"; };
 		0433DAAF201229B400FA79BD /* Podium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Podium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0433DAB2201229B400FA79BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0433DAB7201229B400FA79BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,6 +123,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043100AA203E3654000BB7CA /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				043100B3203E38F6000BB7CA /* Counting Stars.m4a */,
+				043100B1203E38F5000BB7CA /* If I Lose Myself.m4a */,
+				043100B2203E38F5000BB7CA /* Love Runs Out.m4a */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
 		0433DAA6201229B400FA79BD = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +168,7 @@
 				0433DAC1201229B400FA79BD /* Info.plist */,
 				0433DAE42017680F00FA79BD /* GoogleService-Info.plist */,
 				0433DAB9201229B400FA79BD /* Podium.xcdatamodeld */,
+				043100AA203E3654000BB7CA /* Songs */,
 			);
 			path = Podium;
 			sourceTree = "<group>";
@@ -182,6 +201,7 @@
 				0488A1A9201CA5EF00ABBC70 /* StoreViewController.swift */,
 				0488A1AB201D232900ABBC70 /* SocialViewController.swift */,
 				048D0B0D202136DE0080FFB9 /* FeedViewController.swift */,
+				043100A3203E3132000BB7CA /* LibraryViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -346,8 +366,11 @@
 			files = (
 				0433DAC0201229B400FA79BD /* LaunchScreen.storyboard in Resources */,
 				0433DAE52017680F00FA79BD /* GoogleService-Info.plist in Resources */,
+				043100B6203E38F6000BB7CA /* Counting Stars.m4a in Resources */,
 				0433DABD201229B400FA79BD /* Assets.xcassets in Resources */,
+				043100B4203E38F6000BB7CA /* If I Lose Myself.m4a in Resources */,
 				0433DAB8201229B400FA79BD /* Main.storyboard in Resources */,
+				043100B5203E38F6000BB7CA /* Love Runs Out.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +570,7 @@
 				0433DAE92017EC5300FA79BD /* SignUpViewController.swift in Sources */,
 				0488A1B0201D25D000ABBC70 /* ArtistCell.swift in Sources */,
 				0445A1DD201FBD8700F929EF /* ComposePostViewController.swift in Sources */,
+				043100A4203E3132000BB7CA /* LibraryViewController.swift in Sources */,
 				0488A1B5201D28AE00ABBC70 /* Artist.swift in Sources */,
 				048D0B1020213CDB0080FFB9 /* FeedCell.swift in Sources */,
 				0488A1AC201D232900ABBC70 /* SocialViewController.swift in Sources */,

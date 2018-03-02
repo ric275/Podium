@@ -1118,10 +1118,10 @@
             </objects>
             <point key="canvasLocation" x="3890" y="-229"/>
         </scene>
-        <!--View Controller-->
+        <!--Player View Controller-->
         <scene sceneID="j8P-vW-9kK">
             <objects>
-                <viewController id="Oqz-Af-t6c" sceneMemberID="viewController">
+                <viewController id="Oqz-Af-t6c" customClass="PlayerViewController" customModule="Podium" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Or9-KN-nAe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1130,44 +1130,86 @@
                                 <rect key="frame" x="321" y="535" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="play:" destination="Oqz-Af-t6c" eventType="touchUpInside" id="wZq-ZM-oKT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WK4-QT-9D8">
                                 <rect key="frame" x="315" y="563" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="pause:" destination="Oqz-Af-t6c" eventType="touchUpInside" id="Vq9-Fg-GJO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIp-4f-FVg">
                                 <rect key="frame" x="304" y="497" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Forwards"/>
+                                <connections>
+                                    <action selector="forwards:" destination="Oqz-Af-t6c" eventType="touchUpInside" id="Bdk-IB-CSP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwG-oT-w2i">
                                 <rect key="frame" x="321" y="588" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="Oqz-Af-t6c" eventType="touchUpInside" id="35K-mQ-7GV"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Aml-SO-sIj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Aml-SO-sIj">
                                 <rect key="frame" x="146" y="91" width="82" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(2014)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLg-WW-NJK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(2014)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLg-WW-NJK">
                                 <rect key="frame" x="221" y="131" width="51" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P78-NH-7Og">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P78-NH-7Og">
                                 <rect key="frame" x="67" y="167" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Cgv-5g-3V1"/>
+                                    <constraint firstAttribute="height" constant="240" id="SXw-xd-5jm"/>
+                                </constraints>
                             </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Y06-FN-wzS">
+                                <rect key="frame" x="65" y="425" width="244" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="9V4-Dp-AOE"/>
+                                    <constraint firstAttribute="width" constant="240" id="EeJ-bP-0yQ"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="volume:" destination="Oqz-Af-t6c" eventType="valueChanged" id="HQ0-pQ-En7"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CHN-lq-LFq" firstAttribute="trailing" secondItem="xLg-WW-NJK" secondAttribute="trailing" constant="103" id="28g-Pc-F1R"/>
+                            <constraint firstItem="Aml-SO-sIj" firstAttribute="top" secondItem="CHN-lq-LFq" secondAttribute="top" constant="27" id="8Lm-hH-hHt"/>
+                            <constraint firstItem="P78-NH-7Og" firstAttribute="centerX" secondItem="Or9-KN-nAe" secondAttribute="centerX" id="KSy-8l-21u"/>
+                            <constraint firstItem="CHN-lq-LFq" firstAttribute="bottom" secondItem="Y06-FN-wzS" secondAttribute="bottom" constant="164" id="U19-cO-mU6"/>
+                            <constraint firstItem="xLg-WW-NJK" firstAttribute="top" secondItem="Aml-SO-sIj" secondAttribute="bottom" constant="1" id="WAr-G3-3k8"/>
+                            <constraint firstItem="P78-NH-7Og" firstAttribute="leading" secondItem="CHN-lq-LFq" secondAttribute="leading" constant="67" id="bEO-5n-6Mp"/>
+                            <constraint firstItem="Y06-FN-wzS" firstAttribute="centerX" secondItem="Or9-KN-nAe" secondAttribute="centerX" id="f6x-qy-U3n"/>
+                            <constraint firstItem="Aml-SO-sIj" firstAttribute="centerX" secondItem="Or9-KN-nAe" secondAttribute="centerX" id="snL-XF-FRv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="CHN-lq-LFq"/>
                     </view>
+                    <connections>
+                        <outlet property="albumArt" destination="P78-NH-7Og" id="jcg-MB-deS"/>
+                        <outlet property="backButton" destination="jwG-oT-w2i" id="EeC-3k-ROX"/>
+                        <outlet property="forwardsButton" destination="rIp-4f-FVg" id="jwd-of-sdu"/>
+                        <outlet property="pauseButton" destination="WK4-QT-9D8" id="LlY-2Z-PGs"/>
+                        <outlet property="playButton" destination="nuo-PO-W83" id="2lh-r6-1XQ"/>
+                        <outlet property="songTitle" destination="Aml-SO-sIj" id="Vgx-YZ-BYn"/>
+                        <outlet property="songYear" destination="xLg-WW-NJK" id="i01-rF-YzE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vue-Id-Jgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

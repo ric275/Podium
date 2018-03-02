@@ -15,6 +15,7 @@
 		043100BF2049AC56000BB7CA /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043100BE2049AC56000BB7CA /* StatsViewController.swift */; };
 		043100C12049BBE6000BB7CA /* ArtistFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043100C02049BBE6000BB7CA /* ArtistFeedViewController.swift */; };
 		043100C32049BE62000BB7CA /* ArtistSocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043100C22049BE62000BB7CA /* ArtistSocialViewController.swift */; };
+		043100C52049DA77000BB7CA /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043100C42049DA77000BB7CA /* PlayerViewController.swift */; };
 		0433DAB3201229B400FA79BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433DAB2201229B400FA79BD /* AppDelegate.swift */; };
 		0433DAB8201229B400FA79BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0433DAB6201229B400FA79BD /* Main.storyboard */; };
 		0433DABB201229B400FA79BD /* Podium.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0433DAB9201229B400FA79BD /* Podium.xcdatamodeld */; };
@@ -67,6 +68,7 @@
 		043100BE2049AC56000BB7CA /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		043100C02049BBE6000BB7CA /* ArtistFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistFeedViewController.swift; sourceTree = "<group>"; };
 		043100C22049BE62000BB7CA /* ArtistSocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistSocialViewController.swift; sourceTree = "<group>"; };
+		043100C42049DA77000BB7CA /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		0433DAAF201229B400FA79BD /* Podium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Podium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0433DAB2201229B400FA79BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0433DAB7201229B400FA79BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				048D0B0D202136DE0080FFB9 /* FeedViewController.swift */,
 				0488A1AB201D232900ABBC70 /* SocialViewController.swift */,
 				043100A3203E3132000BB7CA /* LibraryViewController.swift */,
+				043100C42049DA77000BB7CA /* PlayerViewController.swift */,
 			);
 			path = Fan;
 			sourceTree = "<group>";
@@ -602,6 +605,7 @@
 				0488A1B5201D28AE00ABBC70 /* Artist.swift in Sources */,
 				048D0B1020213CDB0080FFB9 /* FeedCell.swift in Sources */,
 				043100C32049BE62000BB7CA /* ArtistSocialViewController.swift in Sources */,
+				043100C52049DA77000BB7CA /* PlayerViewController.swift in Sources */,
 				0488A1AC201D232900ABBC70 /* SocialViewController.swift in Sources */,
 				043100BD2049AABE000BB7CA /* ArtistLoginViewController.swift in Sources */,
 				0488A1AA201CA5EF00ABBC70 /* StoreViewController.swift in Sources */,

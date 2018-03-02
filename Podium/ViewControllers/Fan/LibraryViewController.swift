@@ -11,6 +11,7 @@ import AVFoundation
 
 var songs:[String] = []
 var audioPlayer = AVAudioPlayer()
+var currentSong : Int = 0
 
 class LibraryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -44,6 +45,7 @@ class LibraryViewController: UIViewController, UITableViewDelegate, UITableViewD
             
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
             audioPlayer.play()
+            currentSong = indexPath.row
             
         }
         catch {

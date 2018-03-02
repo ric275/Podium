@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		043100A4203E3132000BB7CA /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043100A3203E3132000BB7CA /* LibraryViewController.swift */; };
-		043100B4203E38F6000BB7CA /* If I Lose Myself.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 043100B1203E38F5000BB7CA /* If I Lose Myself.m4a */; };
 		043100B5203E38F6000BB7CA /* Love Runs Out.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 043100B2203E38F5000BB7CA /* Love Runs Out.m4a */; };
 		043100B6203E38F6000BB7CA /* Counting Stars.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 043100B3203E38F6000BB7CA /* Counting Stars.m4a */; };
+		043100BB20499EFF000BB7CA /* ArtistSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043100BA20499EFF000BB7CA /* ArtistSignUpViewController.swift */; };
+		043100BD2049AABE000BB7CA /* ArtistLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043100BC2049AABE000BB7CA /* ArtistLoginViewController.swift */; };
+		043100BF2049AC56000BB7CA /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043100BE2049AC56000BB7CA /* StatsViewController.swift */; };
+		043100C12049BBE6000BB7CA /* ArtistFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043100C02049BBE6000BB7CA /* ArtistFeedViewController.swift */; };
+		043100C32049BE62000BB7CA /* ArtistSocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043100C22049BE62000BB7CA /* ArtistSocialViewController.swift */; };
 		0433DAB3201229B400FA79BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433DAB2201229B400FA79BD /* AppDelegate.swift */; };
 		0433DAB8201229B400FA79BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0433DAB6201229B400FA79BD /* Main.storyboard */; };
 		0433DABB201229B400FA79BD /* Podium.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0433DAB9201229B400FA79BD /* Podium.xcdatamodeld */; };
@@ -56,9 +60,13 @@
 
 /* Begin PBXFileReference section */
 		043100A3203E3132000BB7CA /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
-		043100B1203E38F5000BB7CA /* If I Lose Myself.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "If I Lose Myself.m4a"; sourceTree = "<group>"; };
 		043100B2203E38F5000BB7CA /* Love Runs Out.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Love Runs Out.m4a"; sourceTree = "<group>"; };
 		043100B3203E38F6000BB7CA /* Counting Stars.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Counting Stars.m4a"; sourceTree = "<group>"; };
+		043100BA20499EFF000BB7CA /* ArtistSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistSignUpViewController.swift; sourceTree = "<group>"; };
+		043100BC2049AABE000BB7CA /* ArtistLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistLoginViewController.swift; sourceTree = "<group>"; };
+		043100BE2049AC56000BB7CA /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		043100C02049BBE6000BB7CA /* ArtistFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistFeedViewController.swift; sourceTree = "<group>"; };
+		043100C22049BE62000BB7CA /* ArtistSocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistSocialViewController.swift; sourceTree = "<group>"; };
 		0433DAAF201229B400FA79BD /* Podium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Podium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0433DAB2201229B400FA79BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0433DAB7201229B400FA79BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -127,10 +135,35 @@
 			isa = PBXGroup;
 			children = (
 				043100B3203E38F6000BB7CA /* Counting Stars.m4a */,
-				043100B1203E38F5000BB7CA /* If I Lose Myself.m4a */,
 				043100B2203E38F5000BB7CA /* Love Runs Out.m4a */,
 			);
 			path = Songs;
+			sourceTree = "<group>";
+		};
+		043100B720499917000BB7CA /* Fan */ = {
+			isa = PBXGroup;
+			children = (
+				0433DAE82017EC5300FA79BD /* SignUpViewController.swift */,
+				0488A1A5201BF25F00ABBC70 /* LoginViewController.swift */,
+				0488A1A9201CA5EF00ABBC70 /* StoreViewController.swift */,
+				048D0B0D202136DE0080FFB9 /* FeedViewController.swift */,
+				0488A1AB201D232900ABBC70 /* SocialViewController.swift */,
+				043100A3203E3132000BB7CA /* LibraryViewController.swift */,
+			);
+			path = Fan;
+			sourceTree = "<group>";
+		};
+		043100B920499930000BB7CA /* Artist */ = {
+			isa = PBXGroup;
+			children = (
+				043100BA20499EFF000BB7CA /* ArtistSignUpViewController.swift */,
+				043100BC2049AABE000BB7CA /* ArtistLoginViewController.swift */,
+				043100BE2049AC56000BB7CA /* StatsViewController.swift */,
+				043100C02049BBE6000BB7CA /* ArtistFeedViewController.swift */,
+				043100C22049BE62000BB7CA /* ArtistSocialViewController.swift */,
+				0445A1DC201FBD8700F929EF /* ComposePostViewController.swift */,
+			);
+			path = Artist;
 			sourceTree = "<group>";
 		};
 		0433DAA6201229B400FA79BD = {
@@ -194,14 +227,9 @@
 		0488A1B1201D285D00ABBC70 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0445A1DC201FBD8700F929EF /* ComposePostViewController.swift */,
 				0488A1A7201BF84D00ABBC70 /* LaundingViewController.swift */,
-				0433DAE82017EC5300FA79BD /* SignUpViewController.swift */,
-				0488A1A5201BF25F00ABBC70 /* LoginViewController.swift */,
-				0488A1A9201CA5EF00ABBC70 /* StoreViewController.swift */,
-				0488A1AB201D232900ABBC70 /* SocialViewController.swift */,
-				048D0B0D202136DE0080FFB9 /* FeedViewController.swift */,
-				043100A3203E3132000BB7CA /* LibraryViewController.swift */,
+				043100B920499930000BB7CA /* Artist */,
+				043100B720499917000BB7CA /* Fan */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -368,7 +396,6 @@
 				0433DAE52017680F00FA79BD /* GoogleService-Info.plist in Resources */,
 				043100B6203E38F6000BB7CA /* Counting Stars.m4a in Resources */,
 				0433DABD201229B400FA79BD /* Assets.xcassets in Resources */,
-				043100B4203E38F6000BB7CA /* If I Lose Myself.m4a in Resources */,
 				0433DAB8201229B400FA79BD /* Main.storyboard in Resources */,
 				043100B5203E38F6000BB7CA /* Love Runs Out.m4a in Resources */,
 			);
@@ -569,13 +596,18 @@
 				0488A1A6201BF25F00ABBC70 /* LoginViewController.swift in Sources */,
 				0433DAE92017EC5300FA79BD /* SignUpViewController.swift in Sources */,
 				0488A1B0201D25D000ABBC70 /* ArtistCell.swift in Sources */,
+				043100BB20499EFF000BB7CA /* ArtistSignUpViewController.swift in Sources */,
 				0445A1DD201FBD8700F929EF /* ComposePostViewController.swift in Sources */,
 				043100A4203E3132000BB7CA /* LibraryViewController.swift in Sources */,
 				0488A1B5201D28AE00ABBC70 /* Artist.swift in Sources */,
 				048D0B1020213CDB0080FFB9 /* FeedCell.swift in Sources */,
+				043100C32049BE62000BB7CA /* ArtistSocialViewController.swift in Sources */,
 				0488A1AC201D232900ABBC70 /* SocialViewController.swift in Sources */,
+				043100BD2049AABE000BB7CA /* ArtistLoginViewController.swift in Sources */,
 				0488A1AA201CA5EF00ABBC70 /* StoreViewController.swift in Sources */,
+				043100BF2049AC56000BB7CA /* StatsViewController.swift in Sources */,
 				048D0B0E202136DE0080FFB9 /* FeedViewController.swift in Sources */,
+				043100C12049BBE6000BB7CA /* ArtistFeedViewController.swift in Sources */,
 				0433DABB201229B400FA79BD /* Podium.xcdatamodeld in Sources */,
 				0433DAB3201229B400FA79BD /* AppDelegate.swift in Sources */,
 				0488A1A8201BF84D00ABBC70 /* LaundingViewController.swift in Sources */,

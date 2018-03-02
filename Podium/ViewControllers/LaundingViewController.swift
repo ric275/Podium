@@ -30,9 +30,4 @@ class LaundingViewController: UIViewController {
         self.present(artistErrorAlert, animated: true, completion: nil)
     }
     
-    @IBAction func artistTapped(_ sender: Any) {
-    
-    artistErrorAlert()
-    
-    }
 }

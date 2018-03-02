@@ -146,6 +146,7 @@
                                         <viewLayoutGuide key="safeArea" id="UPX-cX-AIf"/>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="MBm-kd-PqQ" firstAttribute="leading" secondItem="J6k-Vv-E4e" secondAttribute="leading" id="1uH-yt-8wU"/>
                                     <constraint firstAttribute="bottom" secondItem="MBm-kd-PqQ" secondAttribute="bottom" id="3le-gJ-KA7"/>

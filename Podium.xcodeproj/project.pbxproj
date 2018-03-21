@@ -27,9 +27,10 @@
 		0433DAE62017680F00FA79BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0433DAE42017680F00FA79BD /* GoogleService-Info.plist */; };
 		0433DAE72017680F00FA79BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0433DAE42017680F00FA79BD /* GoogleService-Info.plist */; };
 		0433DAE92017EC5300FA79BD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433DAE82017EC5300FA79BD /* SignUpViewController.swift */; };
+		044185662062DA78002E0868 /* FanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044185652062DA78002E0868 /* FanViewController.swift */; };
 		0445A1DD201FBD8700F929EF /* ComposePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445A1DC201FBD8700F929EF /* ComposePostViewController.swift */; };
 		0488A1A6201BF25F00ABBC70 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488A1A5201BF25F00ABBC70 /* LoginViewController.swift */; };
-		0488A1A8201BF84D00ABBC70 /* LaundingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488A1A7201BF84D00ABBC70 /* LaundingViewController.swift */; };
+		0488A1A8201BF84D00ABBC70 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488A1A7201BF84D00ABBC70 /* LandingViewController.swift */; };
 		0488A1AA201CA5EF00ABBC70 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488A1A9201CA5EF00ABBC70 /* StoreViewController.swift */; };
 		0488A1AC201D232900ABBC70 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488A1AB201D232900ABBC70 /* SocialViewController.swift */; };
 		0488A1B0201D25D000ABBC70 /* ArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488A1AF201D25D000ABBC70 /* ArtistCell.swift */; };
@@ -84,9 +85,10 @@
 		0433DAD7201229B400FA79BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0433DAE42017680F00FA79BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0433DAE82017EC5300FA79BD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		044185652062DA78002E0868 /* FanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanViewController.swift; sourceTree = "<group>"; };
 		0445A1DC201FBD8700F929EF /* ComposePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposePostViewController.swift; sourceTree = "<group>"; };
 		0488A1A5201BF25F00ABBC70 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		0488A1A7201BF84D00ABBC70 /* LaundingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundingViewController.swift; sourceTree = "<group>"; };
+		0488A1A7201BF84D00ABBC70 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		0488A1A9201CA5EF00ABBC70 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		0488A1AB201D232900ABBC70 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		0488A1AF201D25D000ABBC70 /* ArtistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCell.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				0488A1AB201D232900ABBC70 /* SocialViewController.swift */,
 				043100A3203E3132000BB7CA /* LibraryViewController.swift */,
 				043100C42049DA77000BB7CA /* PlayerViewController.swift */,
+				044185652062DA78002E0868 /* FanViewController.swift */,
 			);
 			path = Fan;
 			sourceTree = "<group>";
@@ -230,7 +233,7 @@
 		0488A1B1201D285D00ABBC70 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0488A1A7201BF84D00ABBC70 /* LaundingViewController.swift */,
+				0488A1A7201BF84D00ABBC70 /* LandingViewController.swift */,
 				043100B920499930000BB7CA /* Artist */,
 				043100B720499917000BB7CA /* Fan */,
 			);
@@ -605,6 +608,7 @@
 				0488A1B5201D28AE00ABBC70 /* Artist.swift in Sources */,
 				048D0B1020213CDB0080FFB9 /* FeedCell.swift in Sources */,
 				043100C32049BE62000BB7CA /* ArtistSocialViewController.swift in Sources */,
+				044185662062DA78002E0868 /* FanViewController.swift in Sources */,
 				043100C52049DA77000BB7CA /* PlayerViewController.swift in Sources */,
 				0488A1AC201D232900ABBC70 /* SocialViewController.swift in Sources */,
 				043100BD2049AABE000BB7CA /* ArtistLoginViewController.swift in Sources */,
@@ -614,7 +618,7 @@
 				043100C12049BBE6000BB7CA /* ArtistFeedViewController.swift in Sources */,
 				0433DABB201229B400FA79BD /* Podium.xcdatamodeld in Sources */,
 				0433DAB3201229B400FA79BD /* AppDelegate.swift in Sources */,
-				0488A1A8201BF84D00ABBC70 /* LaundingViewController.swift in Sources */,
+				0488A1A8201BF84D00ABBC70 /* LandingViewController.swift in Sources */,
 				048D0B1220213D790080FFB9 /* SocialPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

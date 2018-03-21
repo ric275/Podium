@@ -1,5 +1,5 @@
 //
-//  LaundingViewController.swift
+//  LandingViewController.swift
 //  Podium
 //
 //  Created by Jack Taylor on 26/01/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LaundingViewController: UIViewController {
+class LandingViewController: UIViewController {
     
     @IBOutlet weak var versionLabel: UILabel!
     
@@ -22,12 +22,4 @@ class LaundingViewController: UIViewController {
         }
         
     }
-    
-    func artistErrorAlert() {
-        let artistErrorAlert = UIAlertController(title: "Not yet.", message: "Artist accounts are not usable yet!", preferredStyle: .alert)
-        let cont = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-        artistErrorAlert.addAction(cont)
-        self.present(artistErrorAlert, animated: true, completion: nil)
-    }
-    
 }

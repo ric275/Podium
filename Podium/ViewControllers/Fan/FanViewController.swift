@@ -19,6 +19,5 @@ class FanViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
     }
 }

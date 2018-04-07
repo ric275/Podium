@@ -19,7 +19,7 @@ class LandingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
                 
-        images = [#imageLiteral(resourceName: "Podium splash 1"),#imageLiteral(resourceName: "paramore"),#imageLiteral(resourceName: "gameshow"),#imageLiteral(resourceName: "in our bones"),#imageLiteral(resourceName: "true colours"),#imageLiteral(resourceName: "oh my my")]
+        images = [#imageLiteral(resourceName: "Podium splash 1"),#imageLiteral(resourceName: "Podium splash 2"),#imageLiteral(resourceName: "Podium splash 3"),#imageLiteral(resourceName: "Podium splash 4")]
         
         for i in 0..<images.count {
             

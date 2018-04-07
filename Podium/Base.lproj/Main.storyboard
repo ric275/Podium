@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14105" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -72,7 +72,7 @@
                                                     <color key="titleColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="MtR-Dp-YzH" kind="show" id="nAa-M7-lRr"/>
+                                                    <segue destination="DgD-Ht-dLW" kind="show" id="YDU-Pf-1xa"/>
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wUn-gC-YBm">
@@ -184,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftl-iK-Acz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1257" y="54"/>
+            <point key="canvasLocation" x="-3716" y="1528"/>
         </scene>
         <!--fanLogin-->
         <scene sceneID="Fjr-QX-vak">
@@ -230,7 +230,7 @@
                                     <color key="titleColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Ldy-a1-eHS"/>
+                                    <segue destination="UIl-Nu-PXt" kind="show" id="OlZ-1r-3lT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -258,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffg-96-IrS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1258" y="865"/>
+            <point key="canvasLocation" x="-2054" y="1451"/>
         </scene>
         <!--Landing View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -268,79 +268,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWB-ua-zuj">
-                                <rect key="frame" x="82" y="261" width="211" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaI-bl-ohi">
+                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="211" id="0RR-YR-n6G"/>
-                                    <constraint firstAttribute="height" constant="30" id="xM4-w8-oaw"/>
+                                    <constraint firstAttribute="height" constant="70" id="N3T-8P-xkJ"/>
+                                    <constraint firstAttribute="width" constant="375" id="PaB-7E-unf"/>
                                 </constraints>
-                                <state key="normal" title="Sign up to buy as a fan">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="New? Sign up!">
                                     <color key="titleColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="miM-ej-QfK" kind="show" id="Cbi-eT-jug"/>
+                                    <segue destination="UIl-Nu-PXt" kind="show" id="s99-tB-qcC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPo-m9-rVg">
-                                <rect key="frame" x="82" y="319" width="211" height="30"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEg-OJ-ec2">
+                                <rect key="frame" x="0.0" y="527" width="375" height="70"/>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="211" id="aJ1-ec-Ls6"/>
-                                    <constraint firstAttribute="height" constant="30" id="lNZ-ew-kmQ"/>
+                                    <constraint firstAttribute="height" constant="70" id="GpA-HV-ahf"/>
+                                    <constraint firstAttribute="width" constant="375" id="Hu6-xU-Jo4"/>
                                 </constraints>
-                                <state key="normal" title="Sign up to sell as an artist">
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Returning? Sign in!">
                                     <color key="titleColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="14g-yV-d85" kind="show" id="i8W-J4-NEb"/>
+                                    <segue destination="DgD-Ht-dLW" kind="show" id="WhR-HP-ST4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PODium" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUC-GT-Bjc">
-                                <rect key="frame" x="129.5" y="88" width="115" height="38.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaI-bl-ohi">
-                                <rect key="frame" x="82" y="617" width="211" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Returning artist? Sign in!">
-                                    <color key="titleColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="6lv-F3-ksq" kind="show" id="Fsk-i3-a7Y"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="podium text" translatesAutoresizingMaskIntoConstraints="NO" id="wwI-q8-HcH">
+                                <rect key="frame" x="67" y="44" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Cbm-wE-2hk"/>
+                                    <constraint firstAttribute="height" constant="128" id="b8M-7i-9sw"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGa-Q2-HDg">
-                                <rect key="frame" x="152" y="134" width="71" height="26.5"/>
+                                <rect key="frame" x="152" y="153" width="71" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEg-OJ-ec2">
-                                <rect key="frame" x="82" y="572" width="211" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Returning fan? Sign in!">
-                                    <color key="titleColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="MtR-Dp-YzH" kind="show" id="L6D-ab-0Co"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ZUC-GT-Bjc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1QC-Ku-XcT"/>
-                            <constraint firstItem="jWB-ua-zuj" firstAttribute="top" secondItem="lGa-Q2-HDg" secondAttribute="bottom" constant="100" id="CLl-vm-eVR"/>
-                            <constraint firstItem="vPo-m9-rVg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FsS-Uh-RwV"/>
-                            <constraint firstItem="lGa-Q2-HDg" firstAttribute="top" secondItem="ZUC-GT-Bjc" secondAttribute="bottom" constant="7.5" id="SYw-Ni-3rM"/>
-                            <constraint firstItem="jWB-ua-zuj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="chh-lb-kck"/>
-                            <constraint firstItem="vPo-m9-rVg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lpa-0D-0Ox"/>
+                            <constraint firstItem="YEg-OJ-ec2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Cp-Ea-lCD"/>
+                            <constraint firstItem="YEg-OJ-ec2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8xS-dn-Wu8"/>
+                            <constraint firstItem="wwI-q8-HcH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="Nxj-MF-bi7"/>
+                            <constraint firstItem="LaI-bl-ohi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SaN-Fc-EkX"/>
+                            <constraint firstItem="lGa-Q2-HDg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="133" id="WcG-5s-M0B"/>
+                            <constraint firstItem="LaI-bl-ohi" firstAttribute="top" secondItem="YEg-OJ-ec2" secondAttribute="bottom" id="klI-ie-b3N"/>
+                            <constraint firstItem="LaI-bl-ohi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mYv-ll-spx"/>
+                            <constraint firstItem="LaI-bl-ohi" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nHy-e5-Zu2"/>
+                            <constraint firstItem="wwI-q8-HcH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ner-s0-apc"/>
                             <constraint firstItem="lGa-Q2-HDg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xcn-jG-cZX"/>
-                            <constraint firstItem="ZUC-GT-Bjc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="zv3-2a-qKU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -350,7 +333,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2038" y="38"/>
+            <point key="canvasLocation" x="-2449" y="-90"/>
         </scene>
         <!--Charts-->
         <scene sceneID="xh2-j2-GwR">
@@ -1751,7 +1734,7 @@
                                                     <color key="titleColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="6lv-F3-ksq" kind="show" id="c5k-y6-rac"/>
+                                                    <segue destination="DgD-Ht-dLW" kind="show" id="b2Y-an-Osf"/>
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7VM-9h-6rL">
@@ -1862,7 +1845,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yuk-gr-lYM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-607" y="54"/>
+            <point key="canvasLocation" x="-2895" y="1527"/>
         </scene>
         <!--artistLogin-->
         <scene sceneID="STb-2e-n5k">
@@ -1908,7 +1891,7 @@
                                     <color key="titleColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="jbI-tu-GmC"/>
+                                    <segue destination="UIl-Nu-PXt" kind="show" id="o1Q-zm-5Ou"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1936,7 +1919,171 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9z8-0m-0Sj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-607" y="865"/>
+            <point key="canvasLocation" x="-1295" y="1451"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XI9-3i-FWH">
+            <objects>
+                <viewController storyboardIdentifier="signUpPicker" id="UIl-Nu-PXt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dfV-Ko-jxz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2h-jK-cJu">
+                                <rect key="frame" x="0.0" y="419" width="375" height="200"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1Af-lQ-aqy"/>
+                                    <constraint firstAttribute="width" constant="375" id="2st-gS-XUo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Sign up to sell as an artist">
+                                    <color key="titleColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="14g-yV-d85" kind="show" id="t8A-w1-0cG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vW-VH-gqz">
+                                <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="9Vw-xW-Xhl"/>
+                                    <constraint firstAttribute="height" constant="48" id="wop-E1-udd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Been here before? Sign in!">
+                                    <color key="titleColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DgD-Ht-dLW" kind="show" id="ohW-Tb-urC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="podium text" translatesAutoresizingMaskIntoConstraints="NO" id="9Pk-vz-gDb">
+                                <rect key="frame" x="67" y="44" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="0hd-Pt-2Es"/>
+                                    <constraint firstAttribute="height" constant="128" id="7go-4f-JK3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbh-yC-NEi">
+                                <rect key="frame" x="0.0" y="219" width="375" height="200"/>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="bjR-7S-PL3"/>
+                                    <constraint firstAttribute="height" constant="200" id="fbQ-QC-zHO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Sign up to buy as a fan">
+                                    <color key="titleColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="miM-ej-QfK" kind="show" id="EfP-oH-10H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Pk-vz-gDb" firstAttribute="top" secondItem="Mic-ki-3Dh" secondAttribute="top" constant="24" id="1hC-0U-sqQ"/>
+                            <constraint firstItem="1vW-VH-gqz" firstAttribute="bottom" secondItem="Mic-ki-3Dh" secondAttribute="bottom" id="ARp-MJ-G0f"/>
+                            <constraint firstItem="k2h-jK-cJu" firstAttribute="top" secondItem="Rbh-yC-NEi" secondAttribute="bottom" id="CIM-zI-ksy"/>
+                            <constraint firstItem="1vW-VH-gqz" firstAttribute="top" secondItem="k2h-jK-cJu" secondAttribute="bottom" id="HzI-dH-Hjh"/>
+                            <constraint firstItem="1vW-VH-gqz" firstAttribute="trailing" secondItem="Mic-ki-3Dh" secondAttribute="trailing" id="Omc-Qk-izV"/>
+                            <constraint firstItem="Rbh-yC-NEi" firstAttribute="trailing" secondItem="Mic-ki-3Dh" secondAttribute="trailing" id="QPd-z3-NW2"/>
+                            <constraint firstItem="Rbh-yC-NEi" firstAttribute="leading" secondItem="Mic-ki-3Dh" secondAttribute="leading" id="SBw-y5-zMM"/>
+                            <constraint firstItem="k2h-jK-cJu" firstAttribute="leading" secondItem="Mic-ki-3Dh" secondAttribute="leading" id="VNj-Ad-gkN"/>
+                            <constraint firstItem="9Pk-vz-gDb" firstAttribute="centerX" secondItem="dfV-Ko-jxz" secondAttribute="centerX" id="cCw-vO-bdf"/>
+                            <constraint firstItem="1vW-VH-gqz" firstAttribute="leading" secondItem="Mic-ki-3Dh" secondAttribute="leading" id="dcE-Fe-VBO"/>
+                            <constraint firstItem="k2h-jK-cJu" firstAttribute="trailing" secondItem="Mic-ki-3Dh" secondAttribute="trailing" id="yyV-Y1-52w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mic-ki-3Dh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A3b-xh-dUA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3286" y="760"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6zc-4B-ona">
+            <objects>
+                <viewController storyboardIdentifier="signIPicker" id="DgD-Ht-dLW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VHp-6Z-bmO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSY-sH-H84">
+                                <rect key="frame" x="0.0" y="419" width="375" height="200"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="fKY-ar-eDd"/>
+                                    <constraint firstAttribute="width" constant="375" id="v2o-t4-d9u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Artist sign in">
+                                    <color key="titleColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6lv-F3-ksq" kind="show" id="kaH-V8-nc3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0P-5u-ZAQ">
+                                <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="06y-yL-oLe"/>
+                                    <constraint firstAttribute="width" constant="375" id="0wM-qq-HLZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="New? Sign up!">
+                                    <color key="titleColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UIl-Nu-PXt" kind="show" id="RBd-Wg-RUU"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="podium text" translatesAutoresizingMaskIntoConstraints="NO" id="zvC-Ck-DiU">
+                                <rect key="frame" x="67" y="44" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="9ta-qo-wre"/>
+                                    <constraint firstAttribute="width" constant="240" id="xaS-qI-wcK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23n-He-1Bn">
+                                <rect key="frame" x="0.0" y="219" width="375" height="200"/>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="0UQ-se-ha6"/>
+                                    <constraint firstAttribute="width" constant="375" id="N3O-Sv-x53"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Fan sign in">
+                                    <color key="titleColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MtR-Dp-YzH" kind="show" id="snb-hf-hiF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JSY-sH-H84" firstAttribute="top" secondItem="23n-He-1Bn" secondAttribute="bottom" id="4MD-n0-4Xe"/>
+                            <constraint firstItem="JSY-sH-H84" firstAttribute="trailing" secondItem="A7i-lz-BYK" secondAttribute="trailing" id="7YP-er-AON"/>
+                            <constraint firstItem="zvC-Ck-DiU" firstAttribute="top" secondItem="A7i-lz-BYK" secondAttribute="top" constant="24" id="FRQ-HK-HCj"/>
+                            <constraint firstItem="E0P-5u-ZAQ" firstAttribute="bottom" secondItem="A7i-lz-BYK" secondAttribute="bottom" id="G3l-Jj-GrA"/>
+                            <constraint firstItem="E0P-5u-ZAQ" firstAttribute="top" secondItem="JSY-sH-H84" secondAttribute="bottom" id="IuD-Ew-ZzP"/>
+                            <constraint firstItem="E0P-5u-ZAQ" firstAttribute="trailing" secondItem="A7i-lz-BYK" secondAttribute="trailing" id="MGL-fb-9dt"/>
+                            <constraint firstItem="E0P-5u-ZAQ" firstAttribute="leading" secondItem="A7i-lz-BYK" secondAttribute="leading" id="WFM-38-9sU"/>
+                            <constraint firstItem="zvC-Ck-DiU" firstAttribute="centerX" secondItem="VHp-6Z-bmO" secondAttribute="centerX" id="fSN-jv-pfN"/>
+                            <constraint firstItem="JSY-sH-H84" firstAttribute="leading" secondItem="A7i-lz-BYK" secondAttribute="leading" id="hgk-cg-E2h"/>
+                            <constraint firstItem="23n-He-1Bn" firstAttribute="trailing" secondItem="A7i-lz-BYK" secondAttribute="trailing" id="p4i-pq-o2M"/>
+                            <constraint firstItem="23n-He-1Bn" firstAttribute="leading" secondItem="A7i-lz-BYK" secondAttribute="leading" id="smF-M2-DaV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A7i-lz-BYK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dqb-5q-Fzu" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1697" y="760"/>
         </scene>
     </scenes>
     <resources>
@@ -1947,12 +2094,12 @@
         <image name="oh my my" width="600" height="600"/>
         <image name="paramore" width="600" height="600"/>
         <image name="pie" width="612" height="604"/>
+        <image name="podium text" width="563" height="166"/>
         <image name="steve" width="640" height="640"/>
         <image name="true colours" width="1500" height="1500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fsk-i3-a7Y"/>
-        <segue reference="jbI-tu-GmC"/>
-        <segue reference="L6D-ab-0Co"/>
+        <segue reference="ohW-Tb-urC"/>
+        <segue reference="RBd-Wg-RUU"/>
     </inferredMetricsTieBreakers>
 </document>

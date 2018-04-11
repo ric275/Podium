@@ -107,8 +107,8 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeedCell", for: indexPath) as! FeedCell
         
         cell.image.downloadImage(from: self.posts[indexPath.row].pathToImage)
-        cell.authorLabel.text = "By: \(self.posts[indexPath.row].author!)"
-        cell.likesLabel.text = "Likes: \(self.posts[indexPath.row].likes!)"
+        cell.authorLabel.text = "\(self.posts[indexPath.row].author!)"
+        cell.likesLabel.text = "\(self.posts[indexPath.row].likes!) likes"
         cell.unlikeButton.isHidden = true
         cell.postID = self.posts[indexPath.row].postID
         

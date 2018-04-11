@@ -38,6 +38,7 @@
 		048D0B0E202136DE0080FFB9 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D0B0D202136DE0080FFB9 /* FeedViewController.swift */; };
 		048D0B1020213CDB0080FFB9 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D0B0F20213CDB0080FFB9 /* FeedCell.swift */; };
 		048D0B1220213D790080FFB9 /* SocialPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D0B1120213D790080FFB9 /* SocialPost.swift */; };
+		04B31DA2207E6983004DEEFF /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B31DA1207E6983004DEEFF /* ArtistViewController.swift */; };
 		2D539F65E04BC827EEA1E259 /* Pods_PodiumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4335D35A35031B0988FB490 /* Pods_PodiumTests.framework */; };
 		5246912A62AA4840A963C7EA /* Pods_Podium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3F83511618E428F0B453AF /* Pods_Podium.framework */; };
 		725898299B6C0ADA1B075052 /* Pods_PodiumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC3D3CE181D732608D1CDF2 /* Pods_PodiumUITests.framework */; };
@@ -96,6 +97,7 @@
 		048D0B0D202136DE0080FFB9 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		048D0B0F20213CDB0080FFB9 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		048D0B1120213D790080FFB9 /* SocialPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialPost.swift; sourceTree = "<group>"; };
+		04B31DA1207E6983004DEEFF /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
 		0BE33B3F0760E8626852F435 /* Pods-PodiumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodiumTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodiumTests/Pods-PodiumTests.release.xcconfig"; sourceTree = "<group>"; };
 		5F203E4CD5CD8F49ABFB19B7 /* Pods-PodiumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodiumTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodiumTests/Pods-PodiumTests.debug.xcconfig"; sourceTree = "<group>"; };
 		733D687201520D7F93B337DB /* Pods-Podium.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Podium.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Podium/Pods-Podium.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				043100C02049BBE6000BB7CA /* ArtistFeedViewController.swift */,
 				043100C22049BE62000BB7CA /* ArtistSocialViewController.swift */,
 				0445A1DC201FBD8700F929EF /* ComposePostViewController.swift */,
+				04B31DA1207E6983004DEEFF /* ArtistViewController.swift */,
 			);
 			path = Artist;
 			sourceTree = "<group>";
@@ -610,6 +613,7 @@
 				043100C32049BE62000BB7CA /* ArtistSocialViewController.swift in Sources */,
 				044185662062DA78002E0868 /* FanViewController.swift in Sources */,
 				043100C52049DA77000BB7CA /* PlayerViewController.swift in Sources */,
+				04B31DA2207E6983004DEEFF /* ArtistViewController.swift in Sources */,
 				0488A1AC201D232900ABBC70 /* SocialViewController.swift in Sources */,
 				043100BD2049AABE000BB7CA /* ArtistLoginViewController.swift in Sources */,
 				0488A1AA201CA5EF00ABBC70 /* StoreViewController.swift in Sources */,
